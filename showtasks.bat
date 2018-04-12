@@ -1,7 +1,7 @@
 call runcrud.bat
 if "%ERRORLEVEL%" == "0" goto runbrowser
 echo.
-echo rancrud.bat has errors - breaking work
+echo runcrud.bat has errors - breaking work
 goto fail
 
 :runbrowser
