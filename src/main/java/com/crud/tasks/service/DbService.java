@@ -23,7 +23,7 @@ public class DbService {
         return repository.save(task);
 
     }
-    public void deleteTask(final Long id){
+    public void deleteTask( final Long id){
          repository.deleteById(id);
     }
 }
