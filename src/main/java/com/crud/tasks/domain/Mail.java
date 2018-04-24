@@ -9,5 +9,5 @@ public class Mail {
     private String mailTo;
     private String subbject;
     private  String message;
-    private  String toCc;
+    //private  String toCc;
 }
