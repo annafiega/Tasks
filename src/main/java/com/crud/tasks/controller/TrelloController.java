@@ -23,7 +23,6 @@ public class TrelloController {
     @RequestMapping(method = RequestMethod.GET, value = "getTrelloBoards")
     public List<TrelloBoardDto> getTrelloBoards(){
 
-
        return trelloService.fetchTrelloBoards();
     }
 
