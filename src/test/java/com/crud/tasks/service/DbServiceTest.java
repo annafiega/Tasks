@@ -102,5 +102,14 @@ public class DbServiceTest {
         assertEquals(new Long (1L),savedTask.getId() );
         assertEquals("task",savedTask.getTitle() );
         assertEquals("test_task", savedTask.getContent());
+
+    }
+    @Test
+    public void deleteTask() {
+        // Given and When
+        dbService.deleteTask(1L);
+
+        // Then
+        verify(repository, times(1)).deleteById(1L);
     }
 }
