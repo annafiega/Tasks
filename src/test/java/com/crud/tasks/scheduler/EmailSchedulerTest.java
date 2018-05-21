@@ -34,7 +34,7 @@ public class EmailSchedulerTest {
 
     @Test
     public  void shouldSendInformationEmail(){
-        Mail mail = new Mail("test@test","test mail", "test");
+        Mail mail = new Mail("test@test","Tasks: Once a day email", "Currently in database you got: 1 task");
 
         when(taskRepository.count()).thenReturn(1L);
         when(adminConfig.getAdminMail()).thenReturn("test@test");
