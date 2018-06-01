@@ -11,7 +11,7 @@ import lombok.ToString;
 @EqualsAndHashCode
 public class Mail {
     private String mailTo;
-    private String subbject;
+    private String subject;
     private  String message;
     //private  String toCc;
 }
