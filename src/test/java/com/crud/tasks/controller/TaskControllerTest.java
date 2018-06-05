@@ -52,7 +52,6 @@ public class TaskControllerTest {
     }
 
     @Test
-
     public  void shouldGetTask() throws Exception{
         //given
         Task task = new Task (1L,"test task","test content");

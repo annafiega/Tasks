@@ -40,7 +40,6 @@ public class EmailSchedulerTest {
         when(taskRepository.count()).thenReturn(1L);
         when(adminConfig.getAdminMail()).thenReturn("test@test");
 
-
         //then
         emailScheduler.sendInformationEmail();
 
